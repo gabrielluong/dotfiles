@@ -13,35 +13,76 @@
 DOTFILE_DIR=~/Project/dotfiles
 # dotfiles backup directory
 BACKUP_DIR=$DOTFILE_DIR/dotfiles_backup
-# list of files/folders to symlink in the home directory (~/)
-DOTFILES="vimrc bashrc zshrc gitconfig gitignore_global"
+# list of dotfiles/dotfolders in dotfiles directory
+DOTFILES=$(find $DOTFILE_DIR -maxdepth 1 -name ".*" -exec basename {} \; | sed 's/^.git$//')
 
 echo "Running dotfiles setup..."
 
 # Create backup directory
-echo -n "Creating $BACKUP_DIR directory for backup of any existing dotfiles in the home directory"
-mkdir -p ~/Project/dotfiles/dotfiles_backup
-echo "...SUCCESS"
+if [ ! -d $BACKUP_DIR ]
+then
+	echo -n "Creating backup directory $BACKUP_DIR"
+	mkdir -p ~/Project/dotfiles/dotfiles_backup
+	echo "...SUCCESS"
+else
+	echo "Backup directory already exists...SKIPPED"
+fi
 
-# Move any existing dotfiles that is not a symlink in the given $DOTFILES list from
-# the home directory to the backup directory, and create a symlink from the home directory
-# to any of the dotfiles in the dotfiles directory
 for file in $DOTFILES
 do
-	if [ -f ~/.$file ] && [ ! -L ~/.$file ]
+	# If existing dotfile in ~ is a symlink and does not link to the dotfiles directory,
+	# prompt user on whether or not to delete link.
+	# Note: A symlink cannot be overwritten if it already exists.
+	if [ -L ~/$file ]
 	then
-		echo -n "Moving .$file from ~ to $BACKUP_DIR"
-		mv ~/.$file $BACKUP_DIR
+		file_symlink_target=$(readlink ~/$file)
+
+		if [ "$file_symlink_target" != "$DOTFILE_DIR/$file" ]
+		then
+			echo "ALERT: Symlink for $file exists in ~ and points to $file_symlink_target"
+			
+			while read -s -n 1 -p "Do you wish to keep symlink for $file in ~? (y/n)" input
+			do
+				case $input in
+				[Yy])
+					echo
+					echo "Keeping symlink ~/$file -> $file_symlink_target...SKIPPED"
+					break
+					;;
+				[Nn])
+					echo
+					echo -n "Deleting symlink ~/$file"
+					rm -rf ~/$file
+					echo '...SUCCESS'
+					break
+					;;
+				*)
+					echo
+					echo "Invalid input. You entered $input."
+					;;
+				esac
+			done
+		else
+			echo "Symlink between ~/$file and dotfiles directory already exist...SKIPPED" 
+		fi
+
+	# Backup existing dotfile in ~ that is not a symlink.
+	elif [ -f ~/$file ] || [ -d ~/$file ]
+	then
+		echo -n "Moving $file from ~ to $BACKUP_DIR"
+		mv ~/$file $BACKUP_DIR
 		echo "...SUCCESS"
 	fi
 	
-	if [ ! -L ~/.$file ] && [ -f $DOTFILE_DIR/.$file ]
+	# Create a symlink from the home directory to the dotfile in the dotfiles directory 
+	# if it does not exist.
+	if [ ! -L ~/$file ]
 	then
-		echo -n "Creating symlink to .$file in home directory"
-		ln -s $DOTFILE_DIR/.$file ~/.$file
+		echo -n "Creating symlink to $file in home directory"
+		ln -s $DOTFILE_DIR/$file ~/$file
 		echo "...SUCCESS"
 	fi
 done
 
-echo "dotfiles setup complete!"
+echo "...dotfiles setup complete!"
 exit 0
