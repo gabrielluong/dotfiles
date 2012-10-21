@@ -28,6 +28,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# NPM Bash Completion
+source /usr/local/lib/node_modules/npm/lib/utils/completion.sh 
+
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 export NODE_PATH=/usr/local/lib/node
