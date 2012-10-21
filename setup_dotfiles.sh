@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-# Given a list of dotfiles $DOTFILES and their respective directory $DOTFILE_DIR,
-# backup any existing dotfiles in the list to a backup directory $BACKUP_DIR, and create
-# symlinks from the home directory to the given dotfiles.
+# Given a directory containing dotfiles/dotfolders $DOTFILE_DIR, backup any existing 
+# dotfiles/dotfolders in the given directory to a backup directory $BACKUP_DIR, and create
+# symlinks from the home directory to the given dotfiles/dotfolders.
 #
-# Core script by Michael J. Smalley (https://github.com/michaeljsmalley/dotfiles) 
-# Modified by Gabriel Luong
+# Original script by Michael J. Smalley (https://github.com/michaeljsmalley/dotfiles) 
+# Extended by Gabriel Luong (https://github.com/gabrielluong)
 
 ### Set up env
 
