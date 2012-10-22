@@ -11,17 +11,27 @@ brew upgrade
 brew install wget
 brew install git
 
-# Node & npm installation
+# Setup Python Environment
+brew install python
+pip install --upgrade distribute
+pip install --upgrade pip
+brew install python3
+# To symlink "Idle" and the "Python Launcher" to ~/Application
+#brew linkapps
+pip install virtualenv
+pip install virtualenvwrapper
+
+# Setup Node Environment
 brew install node
 curl https://npmjs.org/install.sh | sh
 npm install -g express
 
-# RVM requirements
+# Setup RVM
 # brew install libksba
 # brew tap homebrew/dupes
 # brew install autoconf automake apple-gcc42
 
-# rbenv installation
+# Setup Ruby with rbenv
 brew install rbenv ruby-build
 rbenv install 1.9.3-p286
 rbenv global 1.9.3-p286

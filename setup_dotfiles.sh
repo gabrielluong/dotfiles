@@ -10,11 +10,11 @@
 ### Set up env
 
 # dotfiles directory
-DOTFILE_DIR=~/Project/dotfiles
+DOTFILE_DIR=~/Projects/dotfiles
 # dotfiles backup directory
 BACKUP_DIR=$DOTFILE_DIR/dotfiles_backup
 # list of dotfiles/dotfolders in dotfiles directory
-DOTFILES=$(find $DOTFILE_DIR -maxdepth 1 -name ".*" -exec basename {} \; | sed 's/^.git$//')
+DOTFILES=$(find $DOTFILE_DIR -maxdepth 1 -name ".*" -exec basename {} \; | sed 's/^.git$//' | sed 's/^.DS_Store$//')
 
 echo "Running dotfiles setup..."
 
@@ -22,7 +22,7 @@ echo "Running dotfiles setup..."
 if [ ! -d $BACKUP_DIR ]
 then
 	echo -n "Creating backup directory $BACKUP_DIR"
-	mkdir -p ~/Project/dotfiles/dotfiles_backup
+	mkdir -p $BACKUP_DIR
 	echo "...SUCCESS"
 else
 	echo "Backup directory already exists...SKIPPED"
