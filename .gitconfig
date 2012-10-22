@@ -1,3 +1,5 @@
 [user]
 	name = Gabriel Luong
 	email = gabriel.luong@gmail.com
+[push]
+	default = simple
