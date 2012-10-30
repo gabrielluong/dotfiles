@@ -29,11 +29,11 @@ plugins=(sublime osx git brew zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # NPM Bash Completion
-source /usr/local/lib/node_modules/npm/lib/utils/completion.sh 
+#source /usr/local/lib/node_modules/npm/lib/utils/completion.sh 
 
 # Customize to your needs...
-export PATH=/usr/local/share/python3:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-export NODE_PATH=/usr/local/lib/node
+export PATH=/usr/local/share/npm/bin:/usr/local/share/python3:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+#export NODE_PATH=/usr/local/lib/node
 
 # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/.rvm/bin

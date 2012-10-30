@@ -23,7 +23,7 @@ pip install virtualenvwrapper
 
 # Setup Node Environment
 brew install node
-curl https://npmjs.org/install.sh | sh
+#brew link node
 npm install -g express
 
 # Setup RVM
