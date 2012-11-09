@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TODO:
+# - Check if brew is installed, and avoid installing homebrew if so.
+
 # Install Homebrew
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
@@ -36,7 +39,13 @@ brew install rbenv ruby-build
 rbenv install 1.9.3-p286
 rbenv global 1.9.3-p286
 rbenv rehash
+
+# Get Gems
 gem install bundler
+gem install dashing
+gem install sinatra
+gem install shotgun
+gem install nokogiri
 
 # Remove outdated Homebrew packages
 brew cleanup
