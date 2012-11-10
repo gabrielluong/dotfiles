@@ -3,3 +3,5 @@
 	email = gabriel.luong@gmail.com
 [push]
 	default = matching
+[core]
+	excludesfile = /Users/gabriel/.gitignore_global
