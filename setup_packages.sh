@@ -46,6 +46,7 @@ gem install dashing
 gem install sinatra
 gem install shotgun
 gem install nokogiri
+gem install rails
 
 # Remove outdated Homebrew packages
 brew cleanup
