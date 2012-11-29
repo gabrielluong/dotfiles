@@ -40,6 +40,10 @@ rbenv install 1.9.3-p286
 rbenv global 1.9.3-p286
 rbenv rehash
 
+# Setup PostgreSQL
+#brew install postgres
+#initdb /usr/local/var/postgres -E utf8
+
 # Get Gems
 gem install bundler
 gem install dashing
