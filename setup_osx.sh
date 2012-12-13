@@ -100,6 +100,13 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 chflags nohidden ~/Library
 
 ###############################################################################
+# Font                                                                        #
+###############################################################################
+
+# Install fonts
+cp fonts/* ~/Library/Fonts/
+
+###############################################################################
 # Dock & hot corners                                                          #
 ###############################################################################
 
@@ -259,7 +266,7 @@ defaults write org.m0k.transmission WarningLegal -bool false
 ###############################################################################
 
 for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
-	"Mail" "Safari"  "SystemUIServer" "Terminal" "Transmission" "iCal" "iTunes" 
+	"Mail" "Safari"  "SystemUIServer" "Terminal" "Transmission" "iCal" "iTunes"
 	#"Twitter" "SizeUp"
 do
 	killall "$app" > /dev/null 2>&1
