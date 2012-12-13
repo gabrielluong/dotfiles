@@ -44,6 +44,8 @@ rbenv rehash
 #brew install postgres
 #initdb /usr/local/var/postgres -E utf8
 
+brew install redis
+
 # Get Gems
 gem install bundler
 gem install dashing
