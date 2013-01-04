@@ -28,6 +28,7 @@ pip install virtualenvwrapper
 brew install node
 #brew link node
 npm install -g express
+npm install -g less
 
 # Setup RVM
 # brew install libksba
