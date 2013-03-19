@@ -175,7 +175,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>308.500000:554.000000</string>
+				<string>288.500000:850.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Filter Finder Items 2.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -274,7 +274,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>308.500000:331.000000</string>
+				<string>288.500000:627.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Launch Application.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -284,7 +284,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>A8B57D63-A737-4ACC-8FA0-47DAED619660</key>
+		<key>AF6BFA77-166E-4DB6-A60E-F387458AD6D6</key>
 		<dict>
 			<key>from</key>
 			<string>42D1210F-14A0-49D7-9754-4E6C2C6D9CC9 - 42D1210F-14A0-49D7-9754-4E6C2C6D9CC9</string>
