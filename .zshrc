@@ -24,7 +24,7 @@ export ZSH_THEME="doubleend"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(sublime osx git brew zsh-syntax-highlighting)
+plugins=(sublime osx git mercurial brew zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
