@@ -28,3 +28,7 @@ Icon?
 profile
 .AppleDouble
 .LSOverride
+
+# Modules #
+###########
+node_modules/*
