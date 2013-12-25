@@ -32,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 #source /usr/local/lib/node_modules/npm/lib/utils/completion.sh 
 
 # Customize to your needs...
-export PATH=/usr/local/pear:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/share/python3:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/pear:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 #export NODE_PATH=/usr/local/lib/node
 
 # Add RVM to PATH for scripting
