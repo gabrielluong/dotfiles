@@ -45,15 +45,15 @@ rbenv rehash
 #brew install postgres
 #initdb /usr/local/var/postgres -E utf8
 
-brew install redis
+# brew install redis
 
 # Get Gems
 gem install bundler
-gem install dashing
-gem install sinatra
-gem install shotgun
-gem install nokogiri
-gem install rails
+# gem install dashing
+# gem install sinatra
+# gem install shotgun
+# gem install nokogiri
+# gem install rails
 
 # Remove outdated Homebrew packages
 brew cleanup
