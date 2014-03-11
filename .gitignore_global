@@ -32,3 +32,4 @@ profile
 # Modules #
 ###########
 node_modules/*
+.idea/*
