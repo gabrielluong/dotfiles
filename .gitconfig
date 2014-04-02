@@ -7,3 +7,5 @@
 	excludesfile = /Users/gabriel/.gitignore_global
 [color]
 	ui = auto
+[gitreview]
+	username = gluong
