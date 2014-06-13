@@ -42,5 +42,5 @@ export PATH=/usr/local/pear:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/b
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Load rbenv function
-eval "$(rbenv init - zsh)"
+#eval "$(rbenv init - zsh)"
 
