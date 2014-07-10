@@ -35,6 +35,10 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/pear:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 #export NODE_PATH=/usr/local/lib/node
 
+# Enable compression
+export CCACHE_COMPRESS=""
+export CCACHE_DIR=/Users/gabriel/.ccache
+
 # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/.rvm/bin
 
