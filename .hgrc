@@ -1,0 +1,8 @@
+[extensions]
+color =
+pager =
+
+[pager]
+pager = less -FSRX
+ignore = version, help, update, serve, record
+
