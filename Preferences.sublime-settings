@@ -1,12 +1,42 @@
 {
 	"caret_style": "wide",
 	"ensure_newline_at_eof_on_save": true,
-	"font_size": 13.0,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"mozilla*/obj-*",
+		"mozilla*/addon-sdk",
+		"mozilla*/gfx/angle",
+		"mozilla*/gfx/cairo",
+		"mozilla*/gfx/graphite2",
+		"mozilla*/gfx/harfbuzz",
+		"mozilla*/gfx/ots",
+		"mozilla*/gfx/qcms",
+		"mozilla*/gfx/skia",
+		"mozilla*/intl/icu",
+		"mozilla*/modules/freetype2",
+		"mozilla*/modules/libbz2",
+		"mozilla*/modules/libmar",
+		"mozilla*/modules/zlib",
+		"mozilla*/testing/gtest/gmock",
+		"mozilla*/testing/gtest/gtest",
+		"mozilla*/other-licenses"
+	],
+	"font_size": 11.5,
 	"ignored_packages":
 	[
-		"Vintage",
 		"BracketHighlighter",
-		"GitGutter"
+		"GitGutter",
+		"Vintage"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"/Users/gabriel/Projects/fx-team/obj-x86_64-apple-darwin13.3.0*",
+		"/Users/gabriel/Projects/fx-team/browser*"
 	],
 	"rulers":
 	[
