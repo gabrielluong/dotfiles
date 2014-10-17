@@ -1,0 +1,22 @@
+[paths]
+default = http://hg.mozilla.org/integration/fx-team
+fx = ssh://hg.mozilla.org/integration/fx-team
+try = ssh://hg.mozilla.org/try
+inbound = ssh://hg.mozilla.org/integration/mozilla-inbound
+
+[ui]
+username = Gabriel Luong <gabriel.luong@gmail.com>
+
+[defaults]
+diff = -p -U 8
+qdiff = -p -U 8
+qnew = -U
+
+[diff]
+git = 1
+unified = 8
+
+[extensions]
+mq =
+purge =
+
