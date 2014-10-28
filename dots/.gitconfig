@@ -4,7 +4,7 @@
 [push]
 	default = matching
 [core]
-	excludesfile = /Users/gabriel/.gitignore_global
+	excludesfile = /Users/oracle/.gitignore_global
 [color]
 	ui = auto
 [gitreview]
