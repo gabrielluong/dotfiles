@@ -35,6 +35,7 @@ binaries=(
 	# rbenv
 	# ruby-build
 	wget
+	mackup
 )
 
 # Install the binaries
