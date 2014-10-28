@@ -12,7 +12,7 @@ if test ! $(which brew); then
 fi
 
 # Update homebrew
-brew update && brew cask update
+brew update
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
