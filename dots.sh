@@ -10,7 +10,7 @@
 ### Set up env
 
 # dotfiles directory
-DOTFILE_DIR=~/Projects/dotfiles
+DOTFILE_DIR=~/Projects/dotfiles/dots
 # dotfiles backup directory
 BACKUP_DIR=$DOTFILE_DIR/dotfiles_backup
 # list of dotfiles/dotfolders in dotfiles directory
