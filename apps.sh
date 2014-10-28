@@ -1,26 +1,90 @@
 #!/bin/bash
+#
+# Application installer (via brew-cask)
+# Based on Matthew Mueller's dots
+# https://github.com/MatthewMueller/dots/blob/master/os/osx/apps.sh
+#
 
-# Get brew-cask
-brew tap phinze/homebrew-cask
-brew install brew-cask
+set -e
 
-brew cask install adium
-brew cask install alfred
-brew cask install dropbox
-brew cask install firefox
-brew cask install flux
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install istat-menus
-brew cask install iterm2
-brew cask install notational-velocity
-# brew cask install nv-alt
-brew cask install one-password
-brew cask install sequel-pro
-brew cask install skype
-brew cask install sublime-text
-brew cask install textwrangler
-brew cask install the-unarchiver
-brew cask install transmission
+# Apps
+apps=(
+	alfred
+	appcleaner
+	atom
+	brackets
+	cloudup
+	dropbox
+	firefox
+	firefox-aurora
+	firefox-nightly
+	flux
+	google-chrome-canary
+	iterm2
+	mactex
+	notational-velocity
+	nvalt
+	onepassword
+	skype
+	spotify
+	sublime-text3
+	the-unarchiver
+    totalfinder
+	transmission
+	vagrant
+	virtualbox
+	vlc
+)
 
-brew cask linkapps
+font=(
+)
+
+# Specify the location of the apps
+appdir="/Applications"
+
+main() {
+	# Ensure homebrew is installed
+	homebrew
+
+	# Install homebrew-cask
+	echo "installing cask..."
+	brew install caskroom/cask/brew-cask
+
+	# Tap alternative versions
+	brew tap caskroom/versions
+
+	# Tap the fonts
+	brew tap caskroom/fonts
+
+	# Install apps
+	echo "installing apps..."
+	brew cask install --appdir=$appdir ${apps[@]}
+
+	# Install fonts
+	# echo "installing fonts..."
+	# brew cask install ${fonts[@]}
+
+	alfred
+	cleanup
+}
+
+# Check for Homebrew
+homebrew() {
+	if test ! $(which brew); then
+	echo "Installing homebrew..."
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	fi
+}
+
+# Link with alfred
+alfred() {
+	brew cask alfred link
+}
+
+cleanup() {
+	brew cleanup
+    brew cask cleanup
+}
+
+main "$@"
+exit 0
