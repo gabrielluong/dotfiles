@@ -1,9 +1,8 @@
 #!/bin/bash
 #
 # Setup OS X configuration
-#
 # Original script by Mathias Bynens (ttp://mths.be/osx)
-# Modified by Gabriel Luong
+#
 
 # Ask for the administrator password upfront
 sudo -v
