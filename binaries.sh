@@ -7,8 +7,8 @@
 
 # Check for Homebrew
 if test ! $(which brew); then
-	echo "Installing homebrew..."
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    echo "Installing homebrew..."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Update homebrew
@@ -29,13 +29,14 @@ brew install homebrew/dupes/grep
 
 # Install other useful binaries
 binaries=(
-	git
-	node
-	python
-	# rbenv
-	# ruby-build
-	wget
-	mackup
+    git
+    node
+    python
+    # rbenv
+    # ruby-build
+    wget
+    mackup
+    mercurial
 )
 
 # Install the binaries
