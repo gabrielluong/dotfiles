@@ -32,6 +32,7 @@ apps=(
     the-unarchiver
     totalfinder
     transmission
+    onepassword
     vagrant
     virtualbox
     vlc
