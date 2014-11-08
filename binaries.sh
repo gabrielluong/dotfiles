@@ -30,6 +30,7 @@ brew install homebrew/dupes/grep
 # Install other useful binaries
 binaries=(
     git
+    flash
     node
     python
     # rbenv
