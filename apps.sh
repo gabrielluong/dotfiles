@@ -21,6 +21,8 @@ apps=(
     firefox-aurora
     firefox-nightly
     flux
+    github
+    google-chrome
     google-chrome-canary
     iterm2
     mactex
@@ -36,6 +38,7 @@ apps=(
     vagrant
     virtualbox
     vlc
+    xquartz
 )
 
 font=(
