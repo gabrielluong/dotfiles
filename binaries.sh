@@ -30,13 +30,11 @@ brew install homebrew/dupes/grep
 # Install other useful binaries
 binaries=(
     git
-    flash
-    node
+    # node
     python
     # rbenv
     # ruby-build
     wget
-    mackup
     mercurial
 )
 

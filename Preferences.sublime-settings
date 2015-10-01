@@ -1,49 +1,20 @@
 {
 	"caret_style": "wide",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"default_line_ending": "unix",
 	"ensure_newline_at_eof_on_save": true,
-	"folder_exclude_patterns":
-	[
-		".svn",
-		".git",
-		".hg",
-		"CVS",
-		"mozilla*/obj-*",
-		"mozilla*/addon-sdk",
-		"mozilla*/gfx/angle",
-		"mozilla*/gfx/cairo",
-		"mozilla*/gfx/graphite2",
-		"mozilla*/gfx/harfbuzz",
-		"mozilla*/gfx/ots",
-		"mozilla*/gfx/qcms",
-		"mozilla*/gfx/skia",
-		"mozilla*/intl/icu",
-		"mozilla*/modules/freetype2",
-		"mozilla*/modules/libbz2",
-		"mozilla*/modules/libmar",
-		"mozilla*/modules/zlib",
-		"mozilla*/testing/gtest/gmock",
-		"mozilla*/testing/gtest/gtest",
-		"mozilla*/other-licenses"
-	],
 	"font_size": 11.5,
 	"ignored_packages":
 	[
-		"BracketHighlighter",
-		"GitGutter",
 		"Vintage"
 	],
-	"index_exclude_patterns":
-	[
-		"*.log",
-		"/Users/gabriel/Projects/fx-team/obj-x86_64-apple-darwin13.3.0*",
-		"/Users/gabriel/Projects/fx-team/browser*"
-	],
+	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
 		80
 	],
 	"tab_size": 4,
-	"theme": "Soda Dark.sublime-theme",
+	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

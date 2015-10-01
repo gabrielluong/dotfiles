@@ -37,7 +37,9 @@ export PATH=/usr/local/pear:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/b
 
 # Enable compression
 export CCACHE_COMPRESS=""
-export CCACHE_DIR=/Users/gabriel/.ccache
+export CCACHE_DIR=/Users/oracle/.ccache
+
+export I_PREFER_A_SUBOPTIMAL_MERCURIAL_EXPERIENCE=1
 
 # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/.rvm/bin
