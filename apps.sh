@@ -10,21 +10,14 @@ set -e
 # Apps
 apps=(
     alfred
-    android-studio
     appcleaner
     atom
     brackets
     cloudup
     dropbox
-    eclipse-java
-    firefox
-    firefox-aurora
-    firefox-nightly
     flux
     github
-    google-chrome
-    google-chrome-canary
-    iterm2
+    iterm2-nightly
     mactex
     notational-velocity
     nvalt
@@ -32,13 +25,9 @@ apps=(
     spotify
     sublime-text3
     the-unarchiver
-    totalfinder
+    #totalfinder
     transmission
-    onepassword
-    vagrant
-    virtualbox
     vlc
-    xquartz
 )
 
 font=(
