@@ -19,4 +19,9 @@ unified = 8
 [extensions]
 mq =
 purge =
+color =
+pager =
 
+[pager]
+pager = less -FSRX
+ignore = version, help, update, serve, record
