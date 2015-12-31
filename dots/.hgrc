@@ -9,6 +9,7 @@ qnew = -U
 [diff]
 git = 1
 unified = 8
+showfunc = 1
 
 [extensions]
 mq =
@@ -19,4 +20,3 @@ pager =
 [pager]
 pager = less -FSRX
 ignore = version, help, update, serve, record
-

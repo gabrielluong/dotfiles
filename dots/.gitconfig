@@ -1,15 +1,5 @@
 [user]
 	name = Gabriel Luong
 	email = gabriel.luong@gmail.com
-[push]
-	default = matching
 [core]
 	excludesfile = /Users/oracle/.gitignore_global
-[color]
-	ui = auto
-[gitreview]
-	username = gluong
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f

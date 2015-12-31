@@ -8,45 +8,23 @@ ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="doubleend"
 
 # Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want disable red dots displayed while waiting for completion
-# DISABLE_COMPLETION_WAITING_DOTS="true"
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
 plugins=(sublime osx git mercurial brew zsh-syntax-highlighting)
 
+# User configuration
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin"
+
 source $ZSH/oh-my-zsh.sh
-
-# NPM Bash Completion
-#source /usr/local/lib/node_modules/npm/lib/utils/completion.sh 
-
-# Customize to your needs...
-export PATH=/usr/local/pear:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-#export NODE_PATH=/usr/local/lib/node
 
 # Enable compression
 export CCACHE_COMPRESS=""
 export CCACHE_DIR=/Users/oracle/.ccache
-
-export I_PREFER_A_SUBOPTIMAL_MERCURIAL_EXPERIENCE=1
-
-# Add RVM to PATH for scripting
-#PATH=$PATH:$HOME/.rvm/bin
-
-# Load RVM function
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-# Load rbenv function
-#eval "$(rbenv init - zsh)"
-
