@@ -9,22 +9,18 @@ set -e
 
 # Apps
 apps=(
-    alfred
+    #alfred
     appcleaner
     atom
     brackets
     cloudup
-    dropbox
     flux
-    github
-    iterm2-nightly
-    mactex
+    #mactex
     notational-velocity
     nvalt
     skype
     spotify
     sublime-text3
-    the-unarchiver
     #totalfinder
     transmission
     vlc

@@ -1,8 +1,7 @@
 [paths]
-default = http://hg.mozilla.org/integration/fx-team
-fx = ssh://hg.mozilla.org/integration/fx-team
-try = ssh://hg.mozilla.org/try
+default = http://hg.mozilla.org/integration/mozilla-inbound
 inbound = ssh://hg.mozilla.org/integration/mozilla-inbound
+try = ssh://hg.mozilla.org/try
 
 [ui]
 username = Gabriel Luong <gabriel.luong@gmail.com>
@@ -10,10 +9,11 @@ username = Gabriel Luong <gabriel.luong@gmail.com>
 [defaults]
 diff = -p -U 8
 qdiff = -p -U 8
-qnew = -U
+qnew = -Ue
 
 [diff]
 git = 1
+showfunc = 1
 unified = 8
 
 [extensions]
@@ -21,7 +21,14 @@ mq =
 purge =
 color =
 pager =
+mozext = ~/.mozbuild/version-control-tools/hgext/mozext
+
 
 [pager]
 pager = less -FSRX
 ignore = version, help, update, serve, record
+
+[alias]
+who = !$HG anno -u $1 | awk '{print $$1" "$$2}' | sort | uniq -c | sort -r
+#diff = !printf '\e[9;1t'; $HG diff $@ | cdiff -s -w 0; printf '\e[9;0t'
+#qdiff = !printf '\e[9;1t'; $HG qdiff $@ | cdiff -s -w 0; printf '\e[9;0t'

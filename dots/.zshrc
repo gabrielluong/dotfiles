@@ -24,6 +24,7 @@ plugins=(sublime osx git mercurial brew zsh-syntax-highlighting)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin"
 
 source $ZSH/oh-my-zsh.sh
+source /Users/oracle/.cargo/env
 
 # Enable compression
 export CCACHE_COMPRESS=""
