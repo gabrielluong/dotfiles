@@ -1,8 +1,12 @@
 {
 	"caret_style": "wide",
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Classic (SL).tmTheme",
 	"default_line_ending": "unix",
 	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		"debugger"
+	],
 	"font_size": 11.5,
 	"ignored_packages":
 	[
@@ -11,9 +15,9 @@
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
-		80
+		90
 	],
-	"tab_size": 4,
+	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
