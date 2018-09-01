@@ -3,13 +3,5 @@
 	email = gabriel.luong@gmail.com
 [core]
 	excludesfile = /Users/oracle/.gitignore_global
-	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
 [push]
 	default = matching
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[cinnabar]
-	helper = /Users/oracle/Projects/git-cinnabar/git-cinnabar-helper
