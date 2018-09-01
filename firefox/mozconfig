@@ -1,0 +1,13 @@
+#ac_add_options --enable-debug
+ac_add_options --enable-debug-js-modules
+mk_add_options AUTOCLOBBER=1
+
+ac_add_options --enable-artifact-builds
+mk_add_options MOZ_OBJDIR=./objdir-frontend
+
+#ac_add_options --with-ccache=/usr/local/bin/ccache
+#mk_add_options MOZ_MAKE_FLAGS="-j12"
+#ac_add_options --enable-optimize
+#ac_add_options --disable-crashreporter
+#ac_add_options --disable-debug-symbols
+#ac_add_options --disable-webrtc
