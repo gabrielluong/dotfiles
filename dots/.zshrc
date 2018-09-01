@@ -21,7 +21,7 @@ plugins=(sublime osx git mercurial brew zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/Users/oracle/Projects/git-cinnabar:/Users/oracle/.mozbuild/version-control-tools/git/commands"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/Users/oracle/.mozbuild/version-control-tools/git/commands:/Users/oracle/Projects/wig"
 
 source $ZSH/oh-my-zsh.sh
 source /Users/oracle/.cargo/env
