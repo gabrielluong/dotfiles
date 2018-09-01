@@ -22,7 +22,14 @@ purge =
 color =
 pager =
 mozext = ~/.mozbuild/version-control-tools/hgext/mozext
+qbackout = /Users/oracle/.mozbuild/version-control-tools/hgext/qbackout
 
+[bugzilla]
+username = gl@mozilla.com
+apikey =
+
+[mozilla]
+ircnick = gl
 
 [pager]
 pager = less -FSRX
