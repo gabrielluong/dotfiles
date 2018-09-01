@@ -1,6 +1,7 @@
 [ui]
 username = Gabriel Luong <gabriel.luong@gmail.com>
 interface = curses
+tweakdefaults = true
 
 [defaults]
 diff = -p -U 8
@@ -15,21 +16,15 @@ showfunc = 1
 [extensions]
 mq = 
 purge = 
-color = 
-pager = 
-fsmonitor = 
 reviewboard = /Users/oracle/.mozbuild/version-control-tools/hgext/reviewboard/client.py
 bzexport = ~/.mozbuild/version-control-tools/hgext/bzexport
 mqext = ~/.mozbuild/version-control-tools/hgext/mqext
-bzpost = ~/.mozbuild/version-control-tools/hgext/bzpost
 push-to-try = ~/.mozbuild/version-control-tools/hgext/push-to-try
+fsmonitor = 
 
 [pager]
 pager = less -FSRX
 ignore = version, help, update, serve, record
-attend-help = true
-attend-incoming = true
-attend-outgoing = true
-attend-status = true
+
 [experimental]
 clonebundles = true
